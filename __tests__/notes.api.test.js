@@ -15,14 +15,14 @@ describe('Notes API', () => {
         expect(res.statusCode).toEqual(200);
     })
 
-    it('get Notes endpoint should respond []', async () => {
+    it('get Notes endpoint should respond [] when no notes', async () => {
         const res = await request(app)
             .get('/notes');
 
         expect(res.body).toEqual([]);
     })
 
-    it('get Notes endpoint should respond exact notes', async () => {
+    it('get Notes endpoint should respond exact notes in db', async () => {
         let notes = [{
             "id": 1,
             "author": "Adams",

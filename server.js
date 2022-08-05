@@ -11,7 +11,6 @@ app.use(routes);
 /** Error handling */
 app.use((err, req, res, next) =>  {
     res.status(err.status || 500);
-    console.log("General error");
     res.json({
       message: err.message,
     });

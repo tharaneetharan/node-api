@@ -3,7 +3,7 @@ require('dotenv').config();
 const server = require('./server');
 const db = require("./lib");
 
-const PORT = process.env.PORT || 3300;
+const PORT = process.env.PORT || 3001;
 
 db.sequelize.sync()
     .then(() => {
