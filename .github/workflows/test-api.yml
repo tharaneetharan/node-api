@@ -1,4 +1,4 @@
-name: node-api
+name: node-api-test
 
 on:
   push:
